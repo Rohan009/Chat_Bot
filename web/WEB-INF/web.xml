@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>word_match</servlet-name>
+        <servlet-class>word_match</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>random_chat</servlet-name>
+        <servlet-class>random_chat</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>word_match</servlet-name>
+        <url-pattern>/word_match</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>random_chat</servlet-name>
+        <url-pattern>/random_chat</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
